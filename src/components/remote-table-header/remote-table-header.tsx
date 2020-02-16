@@ -9,7 +9,7 @@ export class RemoteTableHeader {
 
     @Event() searchEvent: EventEmitter<string>;
 
-    submitSearch(event) {
+    submitSearch(event: any) {
         if(event.key == "Enter") {
             this.searchEvent.emit(event.target.value);
         }
@@ -18,7 +18,7 @@ export class RemoteTableHeader {
     render() {
         return (
             <div>
-                <h1>Table header</h1>
+                <h1>Remote Table 0.0.1</h1>
                 <span>
                     <label>Search Remotely: </label>
                     <input onKeyUp={this.submitSearch.bind(this)}></input>
