@@ -1,0 +1,96 @@
+[
+    {
+        "ThisNumber": "TN 12345",
+        "ThisItem": "TI Item 1",
+        "MMA": "MMA1",
+        "SNum": "SN 01",
+        "Reference": {
+            "Ref field 1": "Value 1",
+            "Ref field 2": "Value 2"
+        },
+        "MultiValue": {
+            "MultiValue 1": {
+                "Date1": "010120",
+                "date2": "010120",
+                "date3": "010120"
+            },
+            "MultiValue 2": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 3": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 4": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 5": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": ""
+            },
+            "MultiValue 6": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": ""
+            },
+            "MultiValue 7": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": ""
+            },
+            "MultiValue 8": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": ""
+            }
+        }
+    },
+    {
+        "ThisNumber": "TN 567",
+        "ThisItem": "TI Item 2",
+        "MMA": "MMA2",
+        "SNum": "SN 02",
+        "Reference": {
+            "Ref field 1": "Value 3",
+            "Ref field 2": "Value 4"
+        },
+        "MultiValue": {
+            "MultiValue 10": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 20": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 30": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 40": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": "010120"
+            },
+            "MultiValue 50": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": ""
+            },
+            "MultiValue 60": {
+                "Date1": "010120",
+                "Date2": "010120",
+                "Date3": ""
+            }
+        }
+    }
+]

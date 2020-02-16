@@ -1,0 +1,12 @@
+remote-table-header {
+    /* Component styles go here */
+}
+
+remote-table-header h1 {
+    float: left;
+}
+
+remote-table-header span {
+    margin-top: 35px;
+    float: right
+}
