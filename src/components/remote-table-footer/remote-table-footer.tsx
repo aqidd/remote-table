@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 
 @Component({
@@ -7,13 +7,13 @@ import { Component, h } from '@stencil/core';
 })
 export class RemoteTableFooter {
 
-
+    @Prop() footerText: string;
 
     render() {
         return (
             <div>
                 <br/>
-                (c) XX
+                {this.footerText}
             </div>
         )
     }

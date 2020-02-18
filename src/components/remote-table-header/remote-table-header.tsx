@@ -1,4 +1,4 @@
-import { Component, h, Event, EventEmitter } from '@stencil/core';
+import { Component, h, Event, EventEmitter, Prop } from '@stencil/core';
 
 
 @Component({
@@ -9,6 +9,8 @@ export class RemoteTableHeader {
 
     @Event() searchEvent: EventEmitter<string>;
 
+    @Prop() titleText: string;
+
     submitSearch(event: any) {
         if(event.key == "Enter") {
             this.searchEvent.emit(event.target.value);
@@ -18,7 +20,7 @@ export class RemoteTableHeader {
     render() {
         return (
             <div>
-                <h1>Remote Table 0.0.1</h1>
+                <h1>{this.titleText}</h1>
                 <span>
                     <label>Search Remotely: </label>
                     <input onKeyUp={this.submitSearch.bind(this)}></input>

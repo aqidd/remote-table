@@ -10,12 +10,20 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface RemoteTable {}
+  interface RemoteTable {
+    'footerText': string;
+    'remoteUrl': string;
+    'tableTitle': string;
+  }
   interface RemoteTableContent {
     'remoteUrl': string;
   }
-  interface RemoteTableFooter {}
-  interface RemoteTableHeader {}
+  interface RemoteTableFooter {
+    'footerText': string;
+  }
+  interface RemoteTableHeader {
+    'titleText': string;
+  }
 }
 
 declare global {
@@ -53,13 +61,20 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface RemoteTable {}
+  interface RemoteTable {
+    'footerText'?: string;
+    'remoteUrl'?: string;
+    'tableTitle'?: string;
+  }
   interface RemoteTableContent {
     'remoteUrl'?: string;
   }
-  interface RemoteTableFooter {}
+  interface RemoteTableFooter {
+    'footerText'?: string;
+  }
   interface RemoteTableHeader {
     'onSearchEvent'?: (event: CustomEvent<string>) => void;
+    'titleText'?: string;
   }
 
   interface IntrinsicElements {

@@ -1,4 +1,4 @@
-import { Component, h, State } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 
 @Component({
@@ -7,21 +7,24 @@ import { Component, h, State } from '@stencil/core';
 })
 export class RemoteTableContainer {
 
-    @State() remoteUrl: string;
+    @Prop() remoteUrl: string;
 
-    componentWillLoad() {
-        this.remoteUrl = 'https://raw.githubusercontent.com/aqidd/remote-table/master/db.json'
-    }
+    @Prop() tableTitle: string;
+
+    @Prop() footerText: string;
 
     render() {
         return [
             <remote-table-header
                 onSearchEvent={this.appendSearchQuery.bind(this)}
+                title-text={this.tableTitle}
             ></remote-table-header>,
             <remote-table-content
                 remoteUrl={this.remoteUrl}
             ></remote-table-content>,
-            <remote-table-footer></remote-table-footer>
+            <remote-table-footer
+                footer-text={this.footerText}>
+            </remote-table-footer>
         ];
     }
 

@@ -14,5 +14,8 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null // disable service workers
     }
+  ],
+  bundles: [
+    { components: ['remote-table', 'remote-table-content', 'remote-table-footer', 'remote-table-header'] }
   ]
 };
