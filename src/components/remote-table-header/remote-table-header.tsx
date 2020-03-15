@@ -21,11 +21,7 @@ export class RemoteTableHeader {
         return (
             <div>
                 <h1>{this.titleText}</h1>
-                <span>
-                    <label>Search Remotely: </label>
-                    <input onKeyUp={this.submitSearch.bind(this)}></input>
-                </span>
-                <br /><br />
+                <br />
             </div>
         );
     }

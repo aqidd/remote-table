@@ -4,8 +4,22 @@
 
 This is a web component built using stencil that tries to dynamically load values from api returning `JSON Array`
 
-How to use :
+![remote table demo](remote-table.gif)
+
+## What it does
+Given url returning `JSON Array`, it will load and display your table, adding local search and pagination.
+
+## Gotcha
+You need to add JQuery and DataTable manually
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+```
+
+## How to use :
 1.  Clone the repository
-2.  Run `npm run build`
+2.  Run `npm run build` to build component or `npm run start` to start local dev
 3.  Run `npm run storybook` to see the documentation with live example
 
