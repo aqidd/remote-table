@@ -9,10 +9,27 @@ This is a web component built using stencil that tries to dynamically load value
 ## What it does
 Given url returning `JSON Array`, it will load and display your table, adding local search and pagination.
 
+Just include:
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="my-element.html">
+    <link rel="import" href="../other-element/other-element.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<remote-table remote-url='https://jsonplaceholder.typicode.com/todos'
+        table-title="Json Typicode Table" footer-text="remote-table 0.1"></remote-table>
+```
+
 ## Gotcha
 You need to add JQuery and DataTable manually
 
-```
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
@@ -23,3 +40,6 @@ You need to add JQuery and DataTable manually
 2.  Run `npm run build` to build component or `npm run start` to start local dev
 3.  Run `npm run storybook` to see the documentation with live example
 
+## To-Do:
+- [ ] Remove JQuery dependency
+- [ ] Add option for search & paginate url
