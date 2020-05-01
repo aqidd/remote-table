@@ -35,6 +35,6 @@
         "@types/jquery": "^3.3.32",
         "datatables.net": "^1.10.20",
         "datatables.net-dt": "^1.10.20",
-        "jquery": "^3.4.1"
+        "jquery": "^3.5.0"
     }
 }
