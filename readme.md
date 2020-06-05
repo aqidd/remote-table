@@ -41,5 +41,5 @@ You need to add JQuery and DataTable manually
 3.  Run `npm run storybook` to see the documentation with live example
 
 ## To-Do:
-- [ ] Remove JQuery dependency
+- [ ] Remove JQuery dependency ( use GridJS.io )
 - [ ] Add option for search & paginate url
