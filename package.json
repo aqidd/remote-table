@@ -33,7 +33,7 @@
     "dependencies": {
         "@types/datatables.net": "^1.10.18",
         "@types/jquery": "^3.3.32",
-        "datatables.net": "^1.10.20",
+        "datatables.net": "^1.11.3",
         "datatables.net-dt": "^1.10.20",
         "jquery": "^3.5.0"
     }
